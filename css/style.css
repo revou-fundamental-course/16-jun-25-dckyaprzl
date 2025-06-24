@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins';
+}
+.wrapper {
+    margin: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    text-align: center;
+    font-family: 'Water Brush';
+    font-size: 3em;
+}
+
+header p {
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.dropdown {
+    width: 100%;
+}
+
+.dropbtn {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #000;
+    color: white;
+    padding: 12px 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 1px solid #ccc;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #333;
+}
+
+section .luas-segitiga h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: white;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 100px;
+ 
+}
+
+section .luas-segitiga img {
+    display: block;
+    margin: 0 auto;
+}
+
+   .form-box {
+      border: 1px solid #000000;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .form-box h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .input-group input {
+      padding: 10px;
+      width: 100px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .button-group button {
+      padding: 10px 20px;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .reset-btn {
+      background-color: #d62828;
+    }
+
+    .hitung-btn {
+      background-color: #000;
+    }
+
+    .output {
+      margin-top: 20px;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    /* keliling segitiga */
+    
+section .keliling-segitiga h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: white;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 100px;
+ 
+}
+
+section .keliling-segitiga img {
+    display: block;
+    margin: 0 auto;
+}
