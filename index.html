@@ -8,114 +8,140 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Water+Brush&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>Welcome To Katik</h1>
-            <p>Hi sobat! selamat datang di Katik..<br>
-                Sebuah web sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar.</p>
-            <nav class="navbar">
-                <div class="dropdown">
-                    <button class="dropbtn">Segitiga</button>
-                    <div class="dropdown-content">
-                        <a href="#" onclick="showSection('luas')">Luas Segitiga</a>
-                        <a href="#" onclick="showSection('keliling')">Keliling Segitiga</a>
+    <div class="container">
+        <div class="wrapper">
+            <header>
+                <h1 class="judul">
+                    <span style="color: #4648B9;">K</span>
+                    <span style="color: #C93225;">A</span>
+                    <span style="color: #FFC300;">L</span>
+                    <span style="color: #4648B9;">K</span>
+                    <span style="color: #26741F;">U</span>
+                    <span style="color: #FFC300;">L</span>
+                    <span style="color: #C93225;">A</span>
+                    <span style="color: #B74AAF;">T</span>
+                    <span style="color: #AD3213;">O</span>
+                    <span style="color: #F55B7C;">R</span>
+                    &nbsp;
+                    <span style="color: #204576;">M</span>
+                    <span style="color: #C93225;">A</span>
+                    <span style="color: #B74AAF;">T</span>
+                    <span style="color: #FF5F42;">E</span>
+                    <span style="color: #204576;">M</span>
+                    <span style="color: #C93225;">A</span>
+                    <span style="color: #B74AAF;">T</span>
+                    <span style="color: #00D739;">I</span>
+                    <span style="color: #4648B9;">K</span>
+                </h1>
+                <div class="marquee">
+                    <p>Hi sobat! selamat datang di Katik.. Sebuah web sederhana yang berfungsi untuk menghitung nilai
+                        luas dan keliling bangun datar segitiga.</p>
+                </div>
+
+            </header>
+
+            <section id="luas-segitiga-section">
+                <div class="luas-segitiga">
+                    <div class="section-title">
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="toggleDropdown(this)">
+                                <img src="img/dropdown.png" alt="" width="40px" height="40px">
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#" onclick="showSection('luas')">Luas Segitiga</a>
+                                <a href="#" onclick="showSection('keliling')">Keliling Segitiga</a>
+                            </div>
+                        </div>
+
+                        <div class="section-heading">
+                            <h2>LUAS SEGITIGA</h2>
+                        </div>
                     </div>
-                </div>
-            </nav>
-        </header>
 
-        <section id="luas-segitiga-section">
-            <div class="luas-segitiga">
-                <h2>Luas Segitiga</h2>
-                <img src="img/C.png" alt="gambar rumus" width="1152">
-                <div class="rumus-luas-segitiga">
-                    <p><strong>Rumus luas segitiga yaitu:</strong> L = 1/2 × a × t</p>
-                    <p><strong>Dimana:</strong></p>
-                    <ul>
-                        <li>L = Luas</li>
-                        <li>a = Panjang Alas</li>
-                        <li>t = Tinggi</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="form-box">
-                <h3>Hitung Luas Segitiga</h3>
-                <div class="input-group">
-                    <input type="number" placeholder="nilai alas">
-                    <span>x</span>
-                    <input type="number" placeholder="nilai tinggi">
-                </div>
 
-                <div class="button-group">
-                    <button class="reset-btn">Reset</button>
-                    <button class="hitung-btn">Hitung</button>
-                </div>
-
-                <div class="output">
-                    <!-- Hasil bisa ditampilkan di sini nanti dengan JS -->
-                    <!-- Contoh:
-        <p>L = 1/2 × a × t</p>
-        <p>L = 1/2 × 80 × 90</p>
-        <p>L = 3600</p>
-        -->
-                </div>
-        </section>
-
-        <section id="keliling-segitiga-section" style="display: none;">
-            <div class="keliling-segitiga">
-                <h2>Keliling Segitiga</h2>
-                <img src="img/C.png" alt="gambar rumus" width="1152">
-                <div class="rumus-keliling-segitiga">
-                    <p><strong>Rumus keliling segitiga yaitu:</strong> K = a + b + c</p>
-                    <p><strong>Dimana:</strong></p>
-                    <ul>
-                        <li>K = Keliling</li>
-                        <li>a = Sisi a</li>
-                        <li>b = Sisi b</li>
-                        <li>c = Sisi c</li>
-                    </ul>
+                    <img src="img/C.png" alt="gambar rumus" width="1152">
+                    <div class="rumus-luas-segitiga">
+                        <p><strong>Rumus luas segitiga yaitu:</strong> L = 1/2 × a × t</p>
+                        <p><strong>Dimana:</strong></p>
+                        <ul>
+                            <li>L = Luas</li>
+                            <li>a = Panjang Alas</li>
+                            <li>t = Tinggi</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="form-box">
-                    <h3>Hitung Keliling Segitiga</h3>
+                    <h3>Hitung Luas Segitiga</h3>
                     <div class="input-group">
-                        <input type="number" placeholder="sisi a">
-                        <span>+</span>
-                        <input type="number" placeholder="sisi b">
-                        <span>+</span>
-                        <input type="number" placeholder="sisi c">
+                        <input type="text" id="alas" placeholder="nilai alas">
+                        <span>x</span>
+                        <input type="text" id="tinggi" placeholder="nilai tinggi">
                     </div>
+
                     <div class="button-group">
-                        <button class="reset-btn">Reset</button>
-                        <button class="hitung-btn">Hitung</button>
+                        <button class="reset-btn" onclick="resetLuas()">Reset</button>
+                        <button class="hitung-btn" onclick="hitungLuas()">Hitung</button>
                     </div>
-                    <div class="output">
-                        <!-- Hasil keliling -->
+
+                    <div class="output" id="output-luas"></div>
+            </section>
+
+            <section id="keliling-segitiga-section" style="display: none;">
+                <div class="keliling-segitiga">
+                    <div class="section-title">
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="toggleDropdown(this)">
+                                <img src="img/dropdown.png" alt="" width="40px" height="40px">
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#" onclick="showSection('luas')">Luas Segitiga</a>
+                                <a href="#" onclick="showSection('keliling')">Keliling Segitiga</a>
+                            </div>
+                        </div>
+
+                        <div class="section-heading">
+                            <h2>KELILING SEGITIGA</h2>
+                        </div>
+                    </div>
+                    <img src="img/C.png" alt="gambar rumus" width="1152">
+                    <div class="rumus-keliling-segitiga">
+                        <p><strong>Rumus keliling segitiga yaitu:</strong> K = a + b + c</p>
+                        <p><strong>Dimana:</strong></p>
+                        <ul>
+                            <li>K = Keliling</li>
+                            <li>a = Sisi a</li>
+                            <li>b = Sisi b</li>
+                            <li>c = Sisi c</li>
+                        </ul>
+                    </div>
+                    <div class="form-box">
+                        <h3>Hitung Keliling Segitiga</h3>
+                        <div class="input-group">
+                            <input type="text" id="sisiA" placeholder="sisi a">
+                            <span>+</span>
+                            <input type="text" id="sisiB" placeholder="sisi b">
+                            <span>+</span>
+                            <input type="text" id="sisiC" placeholder="sisi c">
+                        </div>
+                        <div class="button-group">
+                            <button class="reset-btn" onclick="resetKeliling()">Reset</button>
+                            <button class="hitung-btn" onclick="hitungKeliling()">Hitung</button>
+                        </div>
+                        <div class="output" id="output-keliling">
+                            <!-- Hasil keliling -->
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
-    
-    <script>
-  function showSection(type) {
-    const luas = document.getElementById('luas-segitiga-section');
-    const keliling = document.getElementById('keliling-segitiga-section');
-
-    if (type === 'luas') {
-      luas.style.display = 'block';
-      keliling.style.display = 'none';
-    } else if (type === 'keliling') {
-      luas.style.display = 'none';
-      keliling.style.display = 'block';
-    }
-  }
-</script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
