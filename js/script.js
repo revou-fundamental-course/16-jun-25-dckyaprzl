@@ -1,3 +1,4 @@
+// untuk menampilkan section
 function showSection(type) {
   const luas = document.getElementById('luas-segitiga-section');
   const keliling = document.getElementById('keliling-segitiga-section');
@@ -33,13 +34,12 @@ window.onclick = function (event) {
   }
 }
 
-
-
+//fungsi hitung luas
 function hitungLuas() {
   const alasInput = document.getElementById('alas').value.trim();
   const tinggiInput = document.getElementById('tinggi').value.trim();
   const output = document.getElementById('output-luas');
-
+// form validation
   if (!alasInput || !tinggiInput) {
     output.innerHTML = "<p style='color:red;'>Mohon isi kedua nilai terlebih dahulu.</p>";
     return;
@@ -61,19 +61,19 @@ function hitungLuas() {
   `;
 }
 
-
+//fungsi reset
 function resetLuas() {
   document.getElementById('alas').value = '';
   document.getElementById('tinggi').value = '';
   document.getElementById('output-luas').innerHTML = '';
 }
-
+//fungsi hitung keliling
 function hitungKeliling() {
   const aInput = document.getElementById('sisiA').value.trim();
   const bInput = document.getElementById('sisiB').value.trim();
   const cInput = document.getElementById('sisiC').value.trim();
   const output = document.getElementById('output-keliling');
-
+  //form validation
   if (!aInput || !bInput || !cInput) {
     output.innerHTML = "<p style='color:red;'>Mohon isi ketiga sisi terlebih dahulu.</p>";
     return;
